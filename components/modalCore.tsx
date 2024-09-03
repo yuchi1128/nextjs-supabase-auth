@@ -5,7 +5,9 @@ import SignInForm from './modal/signinForm';
 
 interface Props {
   modalType: ModalType;
+  children?: React.ReactNode; // children を追加
 }
+
 
 const ModalCore = ({ modalType }: Props) => {
   const [showModal, setShowModal] = useState(false);
